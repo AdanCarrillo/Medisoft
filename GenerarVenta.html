@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Generar Ventas</title>
+	<link rel="icon" href="Imagenes/Medisoft.png">
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta http-equiv="x-ua-compatible" content="ie-edge">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/GenerarVenta.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+</head>
+<body>
+	<header>
+		<div class="container text center">
+			<div class="row">
+				<div class="col-12 col-sm-12  col-md-2 col-lg-2 col-xl-2 columnaCabezera1">
+					<div class="logo">
+						<img class="img_logo" src="Imagenes/MedisoftSN.png">	
+					</div>
+				</div>
+				<div class="col-12 col-sm-12  col-md-8 col-lg-8  col-xl-8 columnaCabezera2"> 
+					<h1>Generar Ventas</h1>
+				</div>
+				<div class="col-12 col-sm-12  col-md-2 col-lg-2 col-xl-2 columnaCabezera3">
+					<div class="logo">
+						<nav class="navegacion">
+							<ul>
+								<li><a href="CerrarSesion.php">Salir</a></li>
+							</ul>
+						</nav>
+					</div>
+				</div>	
+			</div>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+				    <a href="#">Inicio</a>
+				  </nav>
+				</section>
+			</div>
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+				    <a href="#">Medicos</a>
+				  </nav>
+				</section>
+			</div>
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+				    <a href="#">Auxiliares</a>
+				  </nav>
+				</section>
+			</div>
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+			        <a href="#">Medicamentos</a>
+				  </nav>
+				</section>
+			</div>	
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+		   	        <a href="#">Consultas</a>
+				  </nav>
+				</section>
+			</div>	
+			<div class="col-12 col-sm-6  col-md-6 col-lg-4  col-xl-2 columnaMenu"> 
+				<section>
+				  <nav>
+				    <a href="#">Ventas</a>
+				  </nav>
+				</section>
+			</div>		
+		</div>
+	</div>
+	
+    <div class="container">
+   		<form action="#" class="formAgregar">
+    		<div class="row">
+    			<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="fol" class="control_label">Folio</label>
+    	      			<input type="text" class="control-form" id="folio" name="Folio" placeholder="0">
+    				</div>
+        		</div>
+
+        		<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="idempleado" class="control_label">Id Empleado</label>
+    	      			<input type="text" class="control-form" id="IdEmpleado" name="Id_empleado" placeholder="0">
+    				</div>
+        		</div>
+
+				<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="fech" class="control_label">Fecha Consulta</label>
+    	      			<input type="text" class="control-form" id="fechacons" name="Fecha_consulta" placeholder="Fecha Consulta">
+    				</div>
+        		</div>
+        		
+			</div>
+			<div class="row">
+        		<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="folioMed" class="control_label">Folio Medicamento</label>
+    	      			<input type="text" class="control-form" id="folioMed" name="Folio_medicamento" placeholder="0">
+    				</div>
+        		</div>
+				
+				
+    			<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="Cantidad" class="control_label">Cantidad</label>
+    	      			<input type="text" class="control-form" id="cant" name="Cantidad" placeholder="0">
+    				</div>
+        		</div>
+
+				<div class="col-12 col-sm-12  col-md-6 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<input type="submit" id="btnAgregar" class="botones botonDefecto" value="Agregar">
+    				</div>
+        		</div>
+				
+			</div>
+
+			<div class="row">
+				<div class="col-12 col-sm-12  col-md-12 col-lg-12  col-xl-12 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="prod" class="control_label">Productos</label>
+   	    				<p></p>
+    	      			<table class="ventaT">
+						  <tr>
+						  	<th>Producto</th>
+						    <th>Precio</th>
+						    <th>Cantidad</th>
+						    <th>Total</th>
+						  </tr>
+						  <tr>
+						    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						  </tr>
+						  <tr>
+						    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						  </tr>
+						  <tr>
+		 				    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						    <td>---</td>
+						  </tr>
+						</table>
+    				</div>
+        		</div>
+			</div>
+			<div class="row">
+				<div class="col-12 col-sm-12  col-md-4 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<label for="tot" class="control_label">Precio Total</label>
+    	      			<input type="text" class="control-form" id="total" name="Total" placeholder="0.0">
+    				</div>
+        		</div>
+
+				<div class="col-12 col-sm-12  col-md-4 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<input type="submit" id="btnGuardar" class="botones botonDefecto" value="Vender">
+    				</div>
+        		</div>
+
+    			<div class="col-12 col-sm-12  col-md-4 col-lg-4  col-xl-4 columnaInfo"> 
+    				<div class="formGroup">
+   	    				<input type="submit" id="btnCancelar" class="botones botonDefecto" value="Cancelar">
+    				</div>
+        		</div>
+			</div>
+
+		</form>
+	</div>
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-12  col-md-12 col-lg-12  col-xl-12 footer"> 
+			<div class="footer">
+  				<p>Footer</p>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+</body>
+<script src="js/jquery-3.4.1.slim.min.js"></script>
+	<script src="popper.min.js" ></script>
+	<script src="js/bootstrap.min.js" ></script>
+</html>
